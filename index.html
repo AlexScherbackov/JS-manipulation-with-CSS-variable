@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Manipulation with CSS variable in JS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header class="main-head">
+		<h1 class="headers main-head__header">
+			Example of JS manipulation with CSS-variable
+		</h1>
+	</header>
+	<main class="app">
+		<form action="" class="controls">
+			<fieldset>
+				<label for="cubicWidth" class="control__text">Block width:<input id="cubicWidth" type="range" name="width" class="control__input" min="70" max="200" value="100" data-sizing="px"></label>
+
+
+				<label for="cubicHeights" class="control__text">Block height: <input id="cubicHeights" type="range" name="height" class="control__input" min="70" max="200" value="100" data-sizing="px"></label>	
+			</fieldset>
+			
+			<fieldset>
+				<label for="cubicSpeed" class="control__text">Animation speed: <input id="cubicSpeed" type="range" class="control__input" name="speed"></label>
+				
+			</fieldset>
+
+			<fieldset>
+				<label for="colorBase" class="control__text">Base color: <input id="colorBase" type="color" class="control__input" name="baseColor" value="#4B0082"></label>
+				<label for="colorFont" class="control__text">Font color: <input id="colorFont" type="color" class="control__input" name="fontColor" value="#ffffff"></label>
+			</fieldset>
+		
+			
+		
+		</form>
+		<div class="action__wrapper">
+			<div id="actionTarget" class="action">
+				<p class="h4 headers__action action__text">It's JavaScript</p>
+			</div>
+		</div>
+	</main>
+
+	<script src="js.js"></script>
+</body>
+</html>
